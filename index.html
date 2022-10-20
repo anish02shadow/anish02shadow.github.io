@@ -1,273 +1,365 @@
+<!-- Team Mycycle here😎 -->
+
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
 
-<html>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bankist | When Banking meets Minimalist</title>
 
-<head>
-	<title>Simple web Development Template</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          designer="Jonas"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Operations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
+      <div class="header__title">
+        <!-- <h1 onclick="alert('HTML alert')"> -->
+        <h1>
+          When
+          <!-- Green highlight effect -->
+          <span class="highlight">banking</span>
+          meets<br />
+          <span class="highlight">minimalist</span>
+        </h1>
+        <h4>A simpler banking experience for a simpler life.</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/hero.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
 
-		.navbar {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			position: sticky;
-			top: 0;
-			cursor: pointer;
-		}
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Everything you need in a modern bank and more.
+        </h3>
+      </div>
 
-		.background {
-			background: black;
-			background-blend-mode: darken;
-			background-size: cover;
-		}
+      <div class="features">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">100% digital bank</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
+            sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
+            debitis ducimus.
+          </p>
+        </div>
 
-		.nav-list {
-			width: 70%;
-			display: flex;
-			align-items: center;
-		}
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Watch your money grow</h5>
+          <p>
+            Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+            inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+            quibusdam!
+          </p>
+        </div>
+        <img
+          src="img/grow-lazy.jpg"
+          data-src="img/grow.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
 
-		.logo {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Free debit card included</h5>
+          <p>
+            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+            eveniet consequatur odit quam quos possimus assumenda dicta fuga
+            inventore ab.
+          </p>
+        </div>
+      </div>
+    </section>
 
-		.logo img {
-			width: 180px;
-			border-radius: 50px;
-		}
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Operations</h2>
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
 
-		.nav-list li {
-			list-style: none;
-			padding: 26px 30px;
-		}
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Instant Transfers
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Instant Loans
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Instant Closing
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Tranfser money to anyone, instantly! No fees, no BS.
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
 
-		.nav-list li a {
-			text-decoration: none;
-			color: white;
-		}
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Buy a home or make your dreams come true, with instant loans.
+          </h5>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            No longer need your account? No problem! Close it instantly.
+          </h5>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </section>
 
-		.nav-list li a:hover {
-			color: grey;
-		}
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+          Millions of Women are already making their lives easier.
+        </h3>
+      </div>
 
-		.rightnav {
-			width: 30%;
-			text-align: right;
-		}
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Best financial decision ever!</h5>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium quas quisquam non? Quas voluptate nulla minima
+              deleniti optio ullam nesciunt, numquam corporis et asperiores
+              laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+              id alias reiciendis, perferendis facere pariatur dolore veniam
+              autem esse non voluptatem saepe provident nihil molestiae.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Aarav Lynn</h6>
+              <p class="testimonial__location">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
 
-		#search {
-			padding: 5px;
-			font-size: 17px;
-			border: 2px solid grey;
-			border-radius: 9px;
-		}
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              The last step to becoming a complete minimalist
+            </h5>
+            <blockquote class="testimonial__text">
+              Quisquam itaque deserunt ullam, quia ea repellendus provident,
+              ducimus neque ipsam modi voluptatibus doloremque, corrupti
+              laborum. Incidunt numquam perferendis veritatis neque repellendus.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+              deserunt exercitationem deleniti.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Miyah Miles</h6>
+              <p class="testimonial__location">London, UK</p>
+            </address>
+          </div>
+        </div>
 
-		.firstsection {
-			background-color: green;
-			height: 400px;
-		}
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Finally free from old-school banks
+            </h5>
+            <blockquote class="testimonial__text">
+              Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+              incidunt commodi architecto numquam omnis nulla autem,
+              necessitatibus blanditiis modi similique quidem. Odio aliquam
+              culpa dicta beatae quod maiores ipsa minus consequatur error sunt,
+              deleniti saepe aliquid quos inventore sequi. Necessitatibus id
+              alias reiciendis, perferendis facere.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Francisco Gomes</h6>
+              <p class="testimonial__location">Lisbon, Portugal</p>
+            </address>
+          </div>
+        </div>
 
-		.secondsection {
-			background-color: blue;
-			height: 400px;
-		}
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
 
-		.box-main {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			color: black;
-			max-width: 80%;
-			margin: auto;
-			height: 80%;
-		}
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best day to join MyCycle was one year ago. The second best is
+          today!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Get your starter kit today!</button>
+    </section>
 
-		.firsthalf {
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/jonasschmedtman"
+          >MyCycle
+        </a>
+        All rights Reserved.
+      </p>
+    </footer>
 
-		.secondhalf {
-			width: 30%;
-		}
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Get started in just<br />
+        <span class="highlight"> few minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=mycycle.me@gmail.com&su=SUBJECT&body=BODY"
+            target="_blank"
+            class="link"
+            >Mail Us</a
+          >
+        </button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
 
-		.secondhalf img {
-			width: 70%;
-			border: 4px solid white;
-			border-radius: 150px;
-			display: block;
-			margin: auto;
-		}
-
-		.text-big {
-			font-family: 'Piazzolla', serif;
-			font-weight: bold;
-			font-size: 35px;
-		}
-
-		.text-small {
-			font-size: 18px;
-		}
-
-		.btn {
-			padding: 8px 20px;
-			margin: 7px 0;
-			border: 2px solid white;
-			border-radius: 8px;
-			background: none;
-			color: white;
-			cursor: pointer;
-		}
-
-		.btn-sm {
-			padding: 6px 10px;
-			vertical-align: middle;
-		}
-
-		.section {
-			height: 400px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			max-width: 90%;
-			margin: auto;
-		}
-
-		.section-Left {
-			flex-direction: row-reverse;
-		}
-
-		.paras {
-			padding: 0px 65px;
-		}
-
-		.thumbnail img {
-			width: 250px;
-			border: 2px solid black;
-			border-radius: 26px;
-			margin-top: 19px;
-		}
-
-		.center {
-			text-align: center;
-		}
-
-		.text-footer {
-			text-align: center;
-			padding: 30px 0;
-			font-family: 'Ubuntu', sans-serif;
-			display: flex;
-			justify-content: center;
-			color: white;
-		}
-	</style>
-</head>
-
-<body>
-	<nav class="navbar background">
-		<ul class="nav-list">
-			<div class="logo">
-				<img src= "logo.png">
-			</div>
-			<li><a href="#web">Web Technology</a></li>
-			<li><a href="#program">C Programming</a></li>
-			<li><a href="#course">Courses</a></li>
-		</ul>
-
-		<div class="rightNav">
-			<input type="text" name="search" id="search">
-			<button class="btn btn-sm">Search</button>
-		</div>
-	</nav>
-
-	<section class="firstsection">
-		<div class="box-main">
-			<div class="firstHalf">
-				<h1 class="text-big" id="web">Web Technology</h1>
-				<p class="text-small">
-					HTML stands for HyperText Markup Language.
-					It is used to design web pages using a markup
-					language. HTML is the combination of Hypertext
-					and Markup language. Hypertext defines the
-					link between the web pages. A markup language
-					is used to define the text document within tag
-					which defines the structure of web pages.
-					HTML is a markup language that is used by the
-					browser to manipulate text, images, and other
-					content to display it in the required format.
-				</p>
-
-
-			</div>
-		</div>
-	</section>
-
-	<section class="secondsection">
-		<div class="box-main">
-			<div class="firstHalf">
-				<h1 class="text-big" id="program">
-					C Programming
-				</h1>
-				<p class="text-small">
-					C is a procedural programming language. It
-					was initially developed by Dennis Ritchie
-					as a system programming language to write
-					operating system. The main features of C
-					language include low-level access to memory,
-					simple set of keywords, and clean style,
-					these features make C language suitable for
-					system programming like operating system or
-					compiler development.
-				</p>
-
-
-			</div>
-		</div>
-	</section>
-
-	<section class="section">
-		<div class="paras">
-			<h1 class="sectionTag text-big">Java</h1>
-
-			<p class="sectionSubTag text-small">
-				Java has been one of the most popular
-				programming language for many years.
-				Java is Object Oriented. However it is
-				not considered as pure object oriented
-				as it provides support for primitive
-				data types (like int, char, etc) The
-				Java codes are first compiled into byte
-				code (machine independent code). Then
-				the byte code is run on Java Virtual
-				Machine (JVM) regardless of the
-				underlying architecture.
-			</p>
-
-
-		</div>
-
-		<div class="thumbnail">
-			<img src= "img.png" alt="laptop image">
-		</div>
-	</section>
-
-	<footer class="background">
-		<p class="text-footer">
-			Copyright ©-All rights are reserved
-		</p>
-
-
-	</footer>
-</body>
-
+    <!-- <script src="script.js"></script> -->
+  </body>
 </html>
-
