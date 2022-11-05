@@ -1,13 +1,13 @@
 :root {
   --color-primary: #c05ec5;
-  --color-secondary: #ffcb03;
-  --color-tertiary: #ff585f;
+  --color-secondary: #FFDAB9;
+  --color-tertiary: #FF69B4;
   --color-primary-darker: #984bbb;
-  --color-secondary-darker: #ffbb00;
-  --color-tertiary-darker: #fd424b;
+  --color-secondary-darker: #fcc492;
+  --color-tertiary-darker: #fa419d;
   --color-primary-opacity: #c05ec53a;
-  --color-secondary-opacity: #ffcd0331;
-  --color-tertiary-opacity: #ff58602d;
+  --color-secondary-opacity: #FFDAB931;
+  --color-tertiary-opacity: #FF69B42d;
   --gradient-primary: linear-gradient(to top left, #8c39b3, #e660da);
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
@@ -211,7 +211,7 @@ h4 {
   grid-column: 2 / 3;
   grid-row: 1 / span 4;
   transform: translateY(-6rem);
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 .highlight {
