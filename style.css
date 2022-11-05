@@ -241,7 +241,9 @@ h4 {
 }
 
 .features__img {
-  width: 100%;
+  width: 150px;
+  align-self: center;
+  justify-self: center;
 }
 
 .features__feature {
