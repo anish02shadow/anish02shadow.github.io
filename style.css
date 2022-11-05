@@ -211,7 +211,7 @@ h4 {
   grid-column: 2 / 3;
   grid-row: 1 / span 4;
   transform: translateY(-6rem);
-  margin-top: 0px;
+  margin-top: 100px;
 }
 
 .highlight {
