@@ -1,13 +1,13 @@
 :root {
   --color-primary: #c05ec5;
-  --color-secondary: #FFDAB9;
-  --color-tertiary: #FF69B4;
+  --color-secondary: #ffdab9;
+  --color-tertiary: #ff69b4;
   --color-primary-darker: #984bbb;
   --color-secondary-darker: #fcc492;
   --color-tertiary-darker: #fa419d;
   --color-primary-opacity: #c05ec53a;
-  --color-secondary-opacity: #FFDAB931;
-  --color-tertiary-opacity: #FF69B42d;
+  --color-secondary-opacity: #ffdab931;
+  --color-tertiary-opacity: #ff69b42d;
   --gradient-primary: linear-gradient(to top left, #8c39b3, #e660da);
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: #444;
   line-height: 1.9;
@@ -85,7 +85,7 @@ body {
   background-color: var(--color-primary-darker);
 }
 
-.btn--text {
+.btn--text2 {
   display: inline-block;
   background: none;
   font-size: 1.7rem;
@@ -97,6 +97,7 @@ body {
   padding-bottom: 2px;
   cursor: pointer;
   transition: all 0.3s;
+  margin-left: 25%;
 }
 
 p {
@@ -185,7 +186,7 @@ img {
 .header__title {
   flex: 1;
 
-     max-width: 115rem;
+  max-width: 115rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
   row-gap: 3rem;
@@ -224,7 +225,7 @@ h4 {
 
 .highlight::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -480,7 +481,7 @@ h4 {
 }
 
 .testimonial::before {
-  content: '\201C';
+  content: "\201C";
   position: absolute;
   top: -5.7rem;
   left: -6.8rem;
